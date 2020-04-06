@@ -14,6 +14,21 @@
  .silver-light {
    color: rgb(126, 126, 126);
  }
+
+.gold-header {
+  background: rgb(255,194,15);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255,194,15,1) 0%, rgba(255,194,15,1) 40%, rgba(233,147,1,1) 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255,194,15,1) 0%,rgba(255,194,15,1) 40%,rgba(233,147,1,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(255,194,15,1) 0%,rgba(255,194,15,1) 40%,rgba(233,147,1,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFC20F', endColorstr='#E99301',GradientType=1 );
+    border-color: #245580;
+    color: #292929;
+    font-weight: bold;
+    font-size: 10pt;
+    text-transform: uppercase;
+}
+
+
  .header{
   background-image: url('../Images/by-night-a5471f591321c33a6fcc760872ec328c.jpg');
   background-repeat: no-repeat;
@@ -32,8 +47,8 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color:#ffffff;
     font-size: 35px;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 ul {
@@ -80,7 +95,7 @@ ul {
   }
   .banner-left {
     margin-top: 3%;
-    margin-left: 5%;
+    margin-left: 10%;
   }
 
   .banner-right .text-banner {
@@ -98,6 +113,23 @@ ul {
     width: 80px;
     padding-top: 5px;
    
+  }
+
+  .btn-gold {
+    border-radius: 5px;
+    background: rgb(255,194,15);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255,194,15,1) 0%, rgba(255,194,15,1) 40%, rgba(233,147,1,1) 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255,194,15,1) 0%,rgba(255,194,15,1) 40%,rgba(233,147,1,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(255,194,15,1) 0%,rgba(255,194,15,1) 40%,rgba(233,147,1,1) 100%);
+    border: none;
+    color: white;
+    padding: 5px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
   }
 
 
@@ -131,6 +163,10 @@ ul {
 
 /* ACTIVITY PAGE  */
 
+.activity-page-banner {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
 
 
 .activity-information-box {
@@ -140,8 +176,8 @@ ul {
   background-color: #dad5d5;
   margin-bottom: 15px;
   font-family: 'Open Sans', serif;
-  margin: 5%;
-  margin-top: 0;
+  margin-left: 10%;
+  margin-bottom: 5%;
   display: grid;
   
 
@@ -168,5 +204,43 @@ ul {
 /* Comercial */
 
 .right-commercial {
+background-color: rgba(237, 156, 7, 0.544);
+padding:5%;
+margin-right: 10%;
+margin-left: 5%;
+box-shadow: 0 0 5px 5px #888888;
+}
 
+/* SEARCH OPTION */
+
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 55%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 15%;
+  height: 42px;
+  padding: 10px;
+  background: rgb(249, 201, 16);
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+ 
+}
+
+form.example button:hover {
+  background: rgb(191, 155, 12);;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
 }
